@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/onCreate_function"
+        android:text="OnCreate() calls:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/onCreate_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/onCreate_function"
+        />
+
+    <TextView
+        android:id="@+id/onStart_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnStart() calls:"
+        android:layout_below="@+id/onCreate_function"/>
+
+    <TextView
+        android:id="@+id/onStart_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/onStart_function"
+        android:layout_below="@+id/onCreate_count_tv"
+        />
+
+    <TextView
+        android:id="@+id/onResume_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnResume() calls:"
+        android:layout_below="@+id/onStart_function"/>
+
+    <TextView
+        android:id="@+id/onResume_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/onResume_function"
+        android:layout_below="@+id/onStart_count_tv"
+        />
+
+    <TextView
+        android:id="@+id/onRestart_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnRestart() calls:"
+        android:layout_below="@+id/onResume_function"/>
+
+    <TextView
+        android:id="@+id/onRestart_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/onRestart_function"
+        android:layout_below="@+id/onResume_count_tv"
+        />
+
+    <Button
+        android:id="@+id/second_activity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Second Activity"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>
